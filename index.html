@@ -1,0 +1,236 @@
+<!-- (this is what is going to be in the main page)
+    log in and sign up buttons at the top right (header section) this are going to 
+       redirect you to another page where you log in or sign up you will be required to 
+       provide your name email address and physical address to register in the database 
+       should create modal forms that pop up when the login signup button are pressed ---
+    form should pop up to confirm if you are 18yrs old or older once you open the main page
+       which indicates you need to give your D.O.B
+    button to search some liquor stores near you using API of which you should be logged in 
+    search bar to browse liquors (this will sit right after the header section)
+    name of the website on the top left (header section) ---
+    dropdown menu with a list of quick links to navigate the "cabinet" (main section)
+    pictures of some bottles that are on sale or offer (body section) 
+    check out form once you are done with shopping ---
+    list of different pages with hyperlinks
+    list of reviews and recommendations (body section)
+    quick list of cocktail recipes (aside section or could be part of the body)
+    copyright and other socials (footer)
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pipers</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans|Bubbler One|Fuzzy Bubbles' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width:initial-scale=1.0">    
+    </head>
+    <body>
+        <div class="header-container">
+            <div class="h1">
+                <a href="index.html" style="text-decoration: none;"><h1>THE PIPERS CLUB</h1></a>
+            </div>
+            <div class="menus">
+                <div class="beer-menu">
+                    <button class="beerbtn">Beers</button>
+                        <div class="beer-content">
+                            <label for="beer-content">List of Beers</label>
+                            <a href="headerpages/lager.html" target="_blank">Lager</a>
+                            <a href="headerpages/lightbeer.html" target="_blank">Light Beer</a>
+                            <a href="headerpages/ale.html" target="_blank">Ale</a>
+                            <a href="headerpages/stout.html" target="_blank">Stout</a>
+                            <a href="headerpages/cabinet.html" target="_blank">Shop all beers</a>
+                        </div>
+                </div>
+                <div class="beer-menu">
+                    <button class="winebtn">Wine</button>
+                        <div class="beer-content">
+                            <label for="beer-content">List of Wines</label>
+                            <a href="headerpages/red.html" target="_blank">Red</a>
+                            <a href="headerpages/white.html" target="_blank">White</a>
+                            <a href="headerpages/Sparkling.html" target="_blank">Sparkling</a>
+                            <a href="headerpages/pinkwine.html" target="_blank">Pink Wine</a>
+                            <a href="headerpages/cabinet.html" target="_blank">Shop all Wine</a>
+                        </div>
+                </div>
+                <div class="beer-menu">
+                    <button class="liquorbtn">Liquor</button>
+                        <div class="beer-content">
+                            <label for="beer-content">List of Liquors</label>
+                            <a href="headerpages/whiskey.html" target="_blank">Whisky</a>
+                            <a href="headerpages/vodka.html" target="_blank">Vodka</a>
+                            <a href="headerpages/brandy.html" target="_blank">Brandy</a>
+                            <a href="headerpages/gin.html" target="_blank">Gin</a>
+                            <a href="headerpages/rum.html" target="_blank">Rum</a>
+                            <a href="headerpages/tequila.html" target="_blank">Tequila</a>
+                            <a href="headerpages/liquer.html" target="_blank">Liquer</a>
+                            <a href="headerpages/cabinet.html" target="_blank" target="_blank">Shop all liquors</a>
+                        </div>
+                </div>
+                <div class="beer-menu">
+                    <button class="giftbtn">Gifts</button>
+                        <div class="beer-content">
+                            <label for="beer-content">What are we celebrating?</label>
+                            <a href="headerpages/holiday.html" target="_blank">Holiday Season</a>
+                            <a href="headerpages/birthday.html" target="_blank">Birthday</a>                        
+                            <a href="headerpages/thanks.html" target="_blank">Thanks</a>
+                            <a href="headerpages/congrats.html" target="_blank">Congrats</a>
+                            <a href="headerpages/thinking.html" target="_blank">Thinking of you</a>
+                            <a href="headerpages/trending.html" target="_blank">Trending</a>
+                        </div>
+                </div>
+                <div class="beer-menu">
+                    <button class="extrasbtn">Extras</button>
+                        <div class="beer-content">
+                        <label for="beer-content">What we can offer</label>
+                            <a href="headerpages/extras.html" target="_blank">Soda</a>
+                            <a href="headerpages/extras.html" target="_blank">Party supplies</a>
+                            <a href="headerpages/extras.html" target="_blank">recipes</a>
+                            <a href="headerpages/extras.html" target="_blank">Mixers</a>
+                            <a href="headerpages/extras.html" target="_blank">Juice</a>
+                        </div>
+                </div>
+                <button>Corporate</button> 
+            </div>
+            <input type="text" placeholder= "Search" name="" id="searchB" style="font-family: Bubbler One;">
+            <div class="logsign-button">
+                <button onclick="" style="margin-right: 5px;">LOG IN</button>
+                <button onclick="">SIGN UP</button>
+                <a href=""><img src="images/216477_shopping_cart_icon.png" alt="shoppingcart">
+                </a>
+            </div>
+        </div>
+        <br>
+       
+        <section class="bg-image1">
+            <h1 class="header">Sips for every soiree</h1>
+            <p>Refreshing beverages at your doorstep in a flash - in less than 15 minutes!</p>
+            <p>Search below for liquor stores near you that offer our delivery services</p>
+            <input type="text" placeholder="search"><button onclick="" type="submit">Submit</button>
+        </section>
+        <br>
+        <section class="bg-image2">
+            <div class="description1">
+                <h2>How Mvinyo actually works</h2>
+                <p>ogg,ogg,ogg,ogg,og,,ogogogog,ogogaodkdkjfhdkh</p>
+                <button class="liquor-browser">Cabinet</button>
+            </div>
+        </section>
+        <br>
+        <section class="bg-image3">
+            <div class="image3">
+                <a href="https://drive.google.com/file/d/1DaO3EmoEALlL_i3e-KuKopsJG9lrgvSG/view?usp=sharing" target="_blank">
+                    <img src="images/kike-salazar-n-J00UI3-Zte0-unsplash.jpg" alt="mixer">
+                </a>
+            </div>
+            <div class="description2">
+                <p>Unleash your inner mixologist and raise a glass
+                with friends! With our simple and delicious 
+                cocktail recipes, your next house party is sure
+                to be a hit. From the classic French Martini 
+                to a tangy Whisky Sour, we've got the perfect 
+                drinks to tantalize your taste buds. Let the 
+                good times flow and cheers to an unforgettable
+                evening with those you hold dear.
+                </p>
+            </div>
+        </section>
+       <!-- <section class="bg-image4">
+            <div class="gallery">
+                <a href="images/bushmills.jpg" target="_blank">
+                    <img src="images/bushmills.jpg" alt="dalmore" width="100px" height="50px">
+                </a>
+                <div class="description">Add Description here</div>
+            </div>
+            <div class="gallery">
+                <a href="images/the dalmore.webp" target="_blank">
+                    <img src="images/the dalmore.webp" alt="dalmore" width="100px" height="50px">
+                </a>
+                <div class="description">Add Description here</div>
+            </div>
+            <div class="gallery">
+                <a href="images/million dollar.webp" target="_blank">
+                    <img src="images/million dollar.webp" alt="dalmore" width="100px" height="50px">
+                </a>
+                <div class="description">Add description here</div>
+            </div>
+            <div class="gallery">
+                <a href="images/xo.webp" target="_blank">
+                    <img src="images/xo.webp" alt="dalmore" width="100px" height="50px">
+                </a>
+                <div class="description">Add Description here</div>
+            </div>
+            <div class="gallery">
+                <a href="images/allbluebottle.webp" target="_blank">
+                    <img src="images/allbluebottle.webp" alt="dalmore" width="100px" height="50px">
+                </a>
+                <div class="description">Add Description here</div>
+            </div>
+            <div class="gallery">
+                <a href="images/hibiki.jpg" target="_blank">
+                    <img src="images/hibiki.jpg" alt="dalmore" width="100px" height="50px">
+                </a>
+                <div class="description">Add Desctiption here</div>
+            </div>
+            <div class="gallery">
+                <a href="images/flor de cana.jpg" target="_blank">
+                    <img src="images/flor de cana.jpg" alt="dalmore" width="100px" height="50px">
+                </a>
+                <div class="description">Add Desctiption here</div>
+            </div>
+            <div class="gallery">
+                <a href="images/ronbarcelo.jpg" target="_blank">
+                    <img src="images/ronbarcelo.jpg" alt="dalmore" width="100px" height="50px">
+                </a>
+                <div class="description">Add Desctiption here</div>
+            </div>
+        </section> -->
+        <div class="footer">
+            <div>
+                <p>For more Information look at our socials and reviews from our customers</p>
+            </div>
+            <br>
+            <div>
+                <pre>About
+                <a href="footer html pages/careers.html" target="_blank">Careers</a>
+                <a href="footer html pages/aboutus.html" target="_blank">About Us</a>
+                <a href="footer html pages/" target="_blank">Mvinyo subscribers</a>
+                <a href="footer html pages/" target="_blank">Gifts</a>
+                <a href="footer html pages/FAQ.html" target="_blank">FAQ</a>
+                <a href="footer html pages/" target="_blank">Press</a>
+                <a href="footer html pages/storefinder.html" target="_blank">Store Finder</a>
+                </pre>
+            </div>
+            <br>
+            <div>
+                <pre>Get in touch
+                    <a href="footer html pages/support.html" target="_blank">Support</a>
+                    <a href="footer html pages/asr.html" target="_blank">Alcohol support resources</a>
+                    <a href="footer html pages/accessibility.html" target="_blank">Accessibility</a>
+                    <a href="footer html pages/returns.html" target="_blank">Returns</a>
+                    <a href="footer html pages/general.html" target="_blank">General</a>
+                    <a href="footer html pages/media.html" target="_blank">Media</a>
+                </pre>
+            </div>
+            <br>
+            <div>
+                <pre>Partner with us
+                <a href="footer html pages/forbiz.html" target="_blank">For business</a>
+                <a href="footer html pages/retailsers.html" target="_blank">Retailers</a>
+                <a href="footer html pages/brand.html" target="_blank">Brands</a>
+                <a href="footer html pages/data.html" target="_blank">Data</a>
+                <a href="footer html pages/baA.html" target="_blank">Become an Affiliate</a>
+               </pre>
+            </div>
+            <div class="socials">
+                <a href="https://facebook.com" target="_blank"><img src="images/3225194_app_facebook_logo_media_popular_icon.png" alt="Facebook" class="fbicon"></a>
+                <a href="https://twitter.com" target="_blank"><img src="images/3225183_app_logo_media_popular_social_icon.png" alt="Twitter" class="fbicon"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/3225191_app_instagram_logo_media_popular_icon.png" alt="Instagram" class="fbicon"></a>
+                <a href="https://gmail.com" target="_blank"><img src="images/3377042_gmail_logo_media_social_icon.png" alt="email" class="fbicon"></a>
+            </div>
+        </div>
+    </body>
+</html>

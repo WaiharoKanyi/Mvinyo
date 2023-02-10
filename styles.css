@@ -1,0 +1,225 @@
+/*
+primary font= Bubblegum Sans
+secondary font= Bubbler One
+primary color= white
+secondary color= hsl(196, 67, 45)
+color of the buttons is going to be red
+header section background 
+wines cabinet color= hsl(358, 67, 45) and white
+whiskey cabinet color= hsl(23, 94, 21) and white
+bourbon cabinet color=  hsl(22, 72, 25) and white
+gin cabinet color= hsl (213, 73, 48) and white
+brandy cabinet color= hsl (40, 73, 48) and white
+footer section is going to have a black background
+color schemes to explore 
+(Mustard #E3B448, Sage #CBD18F, Forest Green #3A6B35
+Coral #FC766AFF, Spiced Apple #783937FF, Peach #F1AC88FF
+Light Purple #AA96DA, Mint #C5FAD5, Butter #FFFFD2
+Raspberry #8A307F, Blues #79A7D3 #6883BC
+Light Blue #ADD8E6, Dark Blue #00008b good for banking
+)
+*/
+*{
+    color: black;
+}
+.header-container .h1{
+    color: #CBD18F;
+    font-family: Bubblegum Sans, cursive;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    background-color: red;
+    height: 60px;
+    box-sizing: border-box;
+}
+.beer-content label{
+    padding: 10px 5px;
+    font-family: Bubbler One;
+    font-weight: bold;
+}
+#searchB{
+    width: 400px;
+    height: 30px;
+}
+.header-container button{
+    color: red;
+    background-color: black;
+}
+.logsign-button{
+    padding: 5px;
+}
+.logsign-button img{
+    width: 40px;
+    height: 40px;  
+    box-sizing: border-box; 
+    padding-top: 10px;
+}
+button{
+    padding: 10px;
+    margin-right: 3px;
+    font-family: Bubbler One, fantasy;
+    font-weight: bold;
+    border: none;
+}
+.menus{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.beer-content{
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color: #783937FF;
+    min-width: 200px;
+    z-index: 1;
+}
+.beer-content a{
+    display: block;
+    text-decoration: none;
+    padding: 12px 16px;
+    font-weight: bold;
+    font-family: Bubbler one;
+}
+.beer-content a:hover{
+    text-decoration: underline;
+}
+.beer-menu:hover .beer-content{
+    display: block;
+}
+.beer-menu:hover .beerbtn{
+    background-color: #3e8e41;
+}
+button:hover{
+    border-bottom: black 1px solid;
+    transition: 10000ms;
+    cursor: default;
+}
+a h1{
+    color: black;
+}
+.header{
+    font-size: 50px;
+    padding-bottom: 5px;
+    font-weight: 900;
+}
+.bg-image1{
+    height: 100vh;
+    width: auto;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 30vh;
+    font-family: Bubbler One;
+    font-weight: bold;
+}
+.bg-image2{
+    height: 100vh;
+    width: auto;
+    text-align: center;
+    padding-top: 30vh;
+    font-family: Bubbler One;
+    font-weight: bold;
+}
+.description1{
+    float: right;
+    padding: 15px;
+}
+.description2{
+    padding: 15px;
+    width: 400px;
+    height: auto;
+    justify-content: flex-end;
+    padding-top: 30vh;
+}
+.bg-image3{
+    text-align: center;
+    font-family: Bubbler One;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+}
+.image3 img{
+    height: 90vh;
+    width: 800px;
+    padding-left: 0px;
+    box-sizing: border-box;
+
+}
+/* .bg-image4{
+    height: 100vh;
+    width: auto;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 30vh;
+    font-family: Bubbler One;
+    font-weight: bold;    
+} */
+
+/* changing backgrounds*/
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: white ;
+}
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-animation-name: background;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes background {
+    0% {
+        background-image: url('images/flor\ de\ cana.jpg');
+    }
+    33% {
+        background-image: url('images/hibiki.jpg');
+    }
+    100% {
+        background-image: url('images/allbluebottle.webp');
+    }
+}*/
+img{
+    width: 200px;
+    height: 150px;
+}
+.ds-crazy{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 300px;
+    flex-wrap: wrap;
+}
+.ds-crazy img:hover{
+    width: 300px;
+    height: 250px;
+    transition: ease-in-out;
+}
+div.gallery{
+    float: left;
+    margin: 5px;
+    border: 1px solid #000;
+}
+div.description{
+
+    padding: 20px;
+    text-align: center;
+}
+.footer{
+    clear: left;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    width: 100%;
+}
+.fbicon{
+    width: 15px;
+    height: 15px;
+}
