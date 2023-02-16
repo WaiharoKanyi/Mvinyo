@@ -20,18 +20,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pipers</title>
+        <title>Mvinyo</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans|Bubbler One|Fuzzy Bubbles' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" media="screen and (min-width: 900px)" href="styles.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width:initial-scale=1.0">    
     </head>
     <body>
         <div class="header-container">
+            <a id="menuicon" onclick="onMenuClick">
+                <img src="images/menu-icon-png-3-lines.png" alt="menubutton">
+            </a>
             <div class="h1">
-                <a href="index.html" style="text-decoration: none;"><h1>THE PIPERS CLUB</h1></a>
+                <a href="index.html" style="text-decoration: none;"><h1>MVINYO</h1></a>
             </div>
             <div class="menus">
                 <div class="beer-menu">
@@ -97,13 +101,25 @@
             </div>
             <input type="text" placeholder= "Search" name="" id="searchB" style="font-family: Bubbler One;">
             <div class="logsign-button">
-                <button onclick="" style="margin-right: 5px;">LOG IN</button>
+                <button onclick="" style="margin-right: 5px;" id="sign_in">LOG IN</button>
                 <button onclick="">SIGN UP</button>
+            </div>
+            <span class="cart">
                 <a href=""><img src="images/216477_shopping_cart_icon.png" alt="shoppingcart">
                 </a>
-            </div>
+            </span>
         </div>
-        <br>
+        <div class="signin">
+            <form action="">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <br>
+                <label for="password">Password:</label><br>
+                <input type="password" name="Password" id="Password" placeholder="Password">
+                <br>
+                <button class="sign-inbtn">signin</button>
+            </form>
+        </div>
        
         <section class="bg-image1">
             <h1 class="header">Sips for every soiree</h1>
@@ -179,5 +195,6 @@
             <a href="https://instagram.com" target="_blank"><img src="images/3225191_app_instagram_logo_media_popular_icon.png" alt="Instagram" class="fbicon"></a>
             <a href="https://gmail.com" target="_blank"><img src="images/3377042_gmail_logo_media_social_icon.png" alt="email" class="fbicon"></a>
         </div>
+        <script src="lsw.js"></script>
     </body>
 </html>
